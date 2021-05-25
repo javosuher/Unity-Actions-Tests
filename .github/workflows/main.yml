@@ -26,16 +26,6 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
-      
-      # Cache
-      - name: Save Unity Library in cache
-        uses: actions/cache@v2
-        with:
-          path: ${{ matrix.projectPath }}/Library
-          key: Library-${{ matrix.projectPath }}-${{ matrix.targetPlatform }}
-          restore-keys: |
-            Library-${{ matrix.projectPath }}-
-            Library-
             
       # Test
       - name: Run tests
