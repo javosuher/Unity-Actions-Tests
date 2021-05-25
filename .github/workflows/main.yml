@@ -18,8 +18,7 @@ jobs:
         unityVersion:
           - 2019.4.20f1
         targetPlatform:
-          - WebGL # WebGL.
-          - Android # Build an Android player.
+          - StandaloneWindows64 # Build a Windows 64-bit standalone.
     steps:
       # Checkout
       - name: Checkout Repo
