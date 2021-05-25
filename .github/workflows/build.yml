@@ -18,6 +18,9 @@ jobs:
           - 2019.4.20f1
         targetPlatform:
           - StandaloneWindows64 # Build a Windows 64-bit standalone.
+          - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
+          - Android # Build an Android player.
+          - WebGL # WebGL.
     steps:
     
       # Checkout
